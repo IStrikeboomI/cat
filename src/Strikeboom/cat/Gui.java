@@ -21,7 +21,7 @@ public class Gui {
         }
         JPanel panel = new CatPanel(catImage);
         panel.setLayout(new GroupLayout(panel));
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         frame.setContentPane(panel);
         frame.pack();
         frame.setIconImage(catImage);
