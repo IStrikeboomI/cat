@@ -9,7 +9,7 @@ public class Main {
         while (true) {
             try {
                 SwingUtilities.invokeAndWait(Gui::new);
-            } catch (InterruptedException | InvocationTargetException ignored) {}
+            } catch (InterruptedException | InvocationTargetException ignored) { }
         }
     }
 }
