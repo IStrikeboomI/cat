@@ -13,10 +13,8 @@ public class Gui {
         BufferedImage catImage = null;
         try {
             catImage = ImageIO.read(Gui.class.getResourceAsStream("images/cat"+
-                    new Random().nextInt(10) + ".jpg"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+                    new Random().nextInt(23) + ".jpg"));
+        } catch (IOException ignored) {}
         JPanel panel = new CatPanel(catImage);
         panel.setLayout(new GroupLayout(panel));
         frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
